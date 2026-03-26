@@ -1,0 +1,27 @@
+project:
+    type: website
+    output-dir: _docs
+lang: es
+format:
+    html:
+        theme: cosmo
+        css: styles.css
+        toc: true
+        keep-md: true
+    commonmark: default
+
+website:
+    twitter-card: true
+    open-graph: true
+    repo-actions: [issue]
+    navbar:
+        background: transparent
+        search: true
+    sidebar:
+        style: floating
+
+metadata-files: [nbdev.yml, sidebar.yml]
+
+execute:
+    eval: false
+    cache: false

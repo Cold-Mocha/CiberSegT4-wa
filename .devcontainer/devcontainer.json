@@ -1,0 +1,34 @@
+{
+    "name": "Python Ciberseguridad Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+                "python.formatting.provider": "black",
+                "editor.formatOnSave": true,
+                "notebook.formatOnSave.enabled": true,
+                "jupyter.notebook.defaultKernel": "Python (ciberseguridad)",
+                "jupyter.kernels.filter": [
+                    {
+                        "name": "ciberseguridad"
+                    }
+                ]
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+
+    "postCreateCommand": "uv sync && uv run python -m ipykernel install --user --name ciberseguridad --display-name 'Python (ciberseguridad)'",
+    "remoteUser": "vscode",
+    "runArgs": ["--name", "python-ciberseguridad-dev-container"]
+}

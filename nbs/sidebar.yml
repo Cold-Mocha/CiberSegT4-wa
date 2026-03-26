@@ -1,0 +1,8 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - section: sbom
+        contents:
+          - sbom\tema1.ipynb
+          - sbom\tema2.ipynb
