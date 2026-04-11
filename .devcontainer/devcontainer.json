@@ -27,7 +27,7 @@
             ]
         }
     },
-    "postCreateCommand": "touch .welcome_flag && uv sync && uv run python -m ipykernel install --user --name ciberseguridad --display-name 'Python (ciberseguridad)' && codeql pack download codeql/python-queries codeql/javascript-queries codeql/java-queries || true && grype db update || true",
+    "postCreateCommand": "touch .welcome_flag && uv sync && uv run python -m ipykernel install --user --name ciberseguridad --display-name 'Python (ciberseguridad)' && codeql pack download codeql/python-queries codeql/javascript-queries codeql/java-queries || true && grype db update || true && uv run scripts/add_submodules.py",
     "remoteUser": "vscode",
     "runArgs": ["--name", "python-ciberseguridad-dev-container"]
 }
