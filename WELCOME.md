@@ -4,6 +4,8 @@
 
 💡 **Tip:** Presiona **Ctrl + Shift + V** (o **Cmd + Shift + V** en Mac) para leer este documento en modo vista previa.
 
+Si todo ha salido bien entonces en este momento se esta realizando la construcción del contenedor, esto puede tardar unos minutos(5-10~), mientras tanto te invito a leer este documento para que comprendas la estructura del libro.
+
 ---
 
 ## 📋 Índice
@@ -30,6 +32,8 @@ uv run scripts/generate_codeql.py --diagnose
 Deberías ver ✓ en: CodeQL CLI, Node.js, npm, query packs
 
 ### 2. Ejecutar Análisis
+
+Idealmente puedes realizar el proceso a traves de los notebook para la mejor experiencia en `/nbs`, sin embargo, también puedes ejecutar los archivos de forma individual
 
 **Para SBOM (Software Bill of Materials):**
 
