@@ -1,5 +1,7 @@
 _docs/
 _proc/
+.analysis/
+.welcome_flag
 
 *.bak
 .gitattributes

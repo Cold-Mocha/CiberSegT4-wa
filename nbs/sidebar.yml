@@ -6,3 +6,8 @@ website:
               contents:
                   - sbom/generacion_sbom.ipynb
                   - sbom/explicacion_script_sbom.ipynb
+            - section: Vulnerabilidades
+              contents:
+                  - vuln/introduccion_vulnerabilidades.ipynb
+                  - vuln/generacion_codeql.ipynb
+                  - vuln/explicacion_script_codeql.ipynb
