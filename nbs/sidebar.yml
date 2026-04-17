@@ -11,6 +11,7 @@ website:
               contents:
                   - vuln/introduccion_vulnerabilidades.md
                   - vuln/taxonomia_vulnerabilidades.md
+                  - vuln/caso_litellm.md
                   - vuln/generacion_codeql.ipynb
                   - vuln/explicacion_script_codeql.ipynb
                   - vuln/generacion_grype.ipynb
