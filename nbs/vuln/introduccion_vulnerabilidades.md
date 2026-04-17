@@ -22,7 +22,7 @@ El concepto de **modelo de amenazas** funciona como una herramienta para enumera
 
 Esta idea es especialmente útil al estudiar vulnerabilidades, porque permite pasar de una noción abstracta de “falla” a una evaluación más concreta del riesgo. Una misma debilidad puede tener implicancias muy distintas dependiendo de quién puede alcanzarla, qué capacidades tiene el atacante y qué efecto produce sobre la confidencialidad, integridad o disponibilidad del sistema.
 
-Como referencia conceptual general para estas nociones, resulta útil revisar [**seguridad.pdf**](/Users/pavt/Documents/research/repos/cursos/id_2026/data/book/seguridad.pdf), especialmente en lo relativo a seguridad de software, modelo de amenazas y distinción entre bugs y vulnerabilidades.
+Como referencia conceptual general para estas nociones, resulta útil revisar el material **seguridad.pdf** del curso, especialmente en lo relativo a seguridad de software, modelo de amenazas y distinción entre bugs y vulnerabilidades.
 
 ## Vulnerabilidades, severidad y gestión del riesgo
 
