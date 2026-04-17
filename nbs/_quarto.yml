@@ -4,6 +4,9 @@ project:
     render:
         - "*.ipynb"
         - "sbom/*.ipynb"
+        - "sbom/*.md"
+        - "vuln/*.ipynb"
+        - "vuln/*.md"
 lang: es
 format:
     html:
