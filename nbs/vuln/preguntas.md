@@ -1,5 +1,5 @@
 ---
-title: "Preguntas sobre vulnerabilidades"
+title: "Preguntas sobre gestión de vulnerabilidades e IA"
 format:
   html:
     toc: true
@@ -67,8 +67,9 @@ details.qa .respuesta ul:last-child {
 }
 </style>
 
-
 Esta página funciona como una guía de autoevaluación para la sección de vulnerabilidades. Cada pregunta incluye una respuesta desplegable para que puedas intentar responder primero y luego contrastar tu razonamiento.
+
+Las preguntas se alinean con la lectura `Uso_de_IA_para__gestionar_vulnerabilidades.md`, que combina tres focos: detección de vulnerabilidades con LLMs, adopción industrial de IA en gestión de vulnerabilidades y reparación automática.
 
 ## Lo que deberías saber
 
@@ -91,11 +92,11 @@ Esta página funciona como una guía de autoevaluación para la sección de vuln
 </details>
 
 <details class="qa">
-<summary>¿Para qué sirve un modelo de amenazas al estudiar vulnerabilidades?</summary>
+<summary>¿Cuál es la diferencia entre severidad y riesgo?</summary>
 <div class="respuesta">
-<p>Un modelo de amenazas sirve para ordenar el análisis de riesgo. Ayuda a identificar activos, adversarios, capacidades, puntos de entrada, componentes sensibles y posibles impactos. Sin ese contexto, es fácil tratar todos los hallazgos como si tuvieran el mismo peso.</p>
-<p>En vulnerabilidades, el modelo de amenazas permite preguntar qué puede hacer realmente un atacante con una debilidad. También ayuda a decidir qué controles son necesarios, qué rutas de ataque son prioritarias y qué hallazgos deben corregirse primero.</p>
-<p>Su valor pedagógico es importante porque conecta código, arquitectura y riesgo. Una debilidad no existe en abstracto. Existe dentro de un sistema con usuarios, permisos, datos, dependencias y supuestos de operación.</p>
+<p>La severidad describe la gravedad técnica potencial de una vulnerabilidad. Suele apoyarse en métricas como CVSS y considera impacto, facilidad de explotación y condiciones técnicas generales.</p>
+<p>El riesgo combina severidad con contexto. Incluye probabilidad de explotación, exposición del sistema, valor del activo afectado, existencia de controles compensatorios, explotación activa y consecuencias para la organización.</p>
+<p>Dos vulnerabilidades con la misma severidad pueden tener riesgos distintos. Una puede estar en un servicio público con datos sensibles. Otra puede estar en un entorno aislado, sin ruta de acceso para adversarios. La priorización necesita ambas dimensiones.</p>
 </div>
 </details>
 
@@ -136,15 +137,6 @@ Esta página funciona como una guía de autoevaluación para la sección de vuln
 </details>
 
 <details class="qa">
-<summary>¿Cuál es la diferencia entre severidad y riesgo?</summary>
-<div class="respuesta">
-<p>La severidad describe la gravedad técnica potencial de una vulnerabilidad. Suele apoyarse en métricas como CVSS y considera impacto, facilidad de explotación y condiciones técnicas generales.</p>
-<p>El riesgo combina severidad con contexto. Incluye probabilidad de explotación, exposición del sistema, valor del activo afectado, existencia de controles compensatorios, explotación activa y consecuencias para la organización.</p>
-<p>Por eso, dos vulnerabilidades con la misma severidad pueden tener riesgos distintos. Una puede estar en un servicio público con datos sensibles. Otra puede estar en un entorno aislado, sin ruta de acceso para adversarios. La priorización necesita ambas dimensiones.</p>
-</div>
-</details>
-
-<details class="qa">
 <summary>¿Qué diferencia hay entre análisis estático y escaneo de dependencias?</summary>
 <div class="respuesta">
 <p>El análisis estático revisa código fuente o representaciones derivadas del código para encontrar patrones inseguros. Puede detectar problemas como inyección, uso inseguro de datos, flujos peligrosos o errores de validación. CodeQL es un ejemplo de esta aproximación.</p>
@@ -172,61 +164,25 @@ Esta página funciona como una guía de autoevaluación para la sección de vuln
 </details>
 
 <details class="qa">
-<summary>¿Por qué los manifiestos de dependencias son relevantes para Grype?</summary>
+<summary>¿Qué significa usar IA para gestionar vulnerabilidades?</summary>
 <div class="respuesta">
-<p>Los manifiestos de dependencias declaran componentes usados por un proyecto. Archivos como <code>package.json</code>, <code>requirements.txt</code>, <code>pom.xml</code>, <code>go.mod</code> o <code>Cargo.toml</code> permiten inferir qué bibliotecas y versiones forman parte del proyecto.</p>
-<p>Grype usa esa información para construir un inventario de componentes y compararlo contra bases de vulnerabilidades. Si no encuentra manifiestos ni otra fuente de paquetes, su capacidad de detección puede ser limitada.</p>
-<p>Esto no significa que no existan riesgos. Puede haber dependencias incorporadas manualmente, imágenes base, componentes del sistema operativo o binarios externos que no aparezcan en manifiestos del repositorio. Por eso el alcance del escaneo debe definirse con claridad.</p>
+<p>Significa usar modelos o herramientas basadas en IA para apoyar tareas del ciclo de gestión de vulnerabilidades. Esto puede incluir detección, clasificación, priorización, explicación, generación de tickets, sugerencia de parches, documentación y apoyo a la divulgación.</p>
+<p>No significa que la IA deba tomar toda la decisión. En seguridad, una recomendación debe conectarse con evidencia técnica, contexto del sistema, pruebas y responsabilidad organizacional.</p>
+<p>La lectura actualizada propone ver la IA como parte de un flujo de trabajo. Su valor depende de cómo se entrena, cómo se evalúa, qué información puede ver, quién revisa sus salidas y qué controles existen antes de aceptar un hallazgo o un parche.</p>
 </div>
 </details>
 
 <details class="qa">
-<summary>¿Qué significa una versión de corrección en un reporte de vulnerabilidades?</summary>
+<summary>¿Por qué detección, evaluación, reparación y divulgación son tareas distintas?</summary>
 <div class="respuesta">
-<p>Una versión de corrección indica una versión del componente donde la vulnerabilidad reportada fue corregida, mitigada o ya no aplica según la fuente consultada. Es una pista práctica para remediar el hallazgo mediante actualización.</p>
-<p>Sin embargo, actualizar no siempre es trivial. Puede haber incompatibilidades, cambios de API, dependencias transitivas, restricciones de plataforma o pruebas necesarias antes de mover la versión en producción.</p>
-<p>Si no existe versión de corrección, la organización debe evaluar mitigaciones alternativas. Por ejemplo, deshabilitar funcionalidad afectada, aplicar controles compensatorios, aislar el componente, monitorear explotación o reemplazar la dependencia.</p>
+<p>Detectar consiste en identificar una posible vulnerabilidad. Evaluar consiste en decidir si el hallazgo aplica, qué severidad tiene y qué riesgo representa en un contexto concreto. Reparar consiste en modificar código, configuración o dependencias para reducir o eliminar el riesgo. Divulgar consiste en comunicar la vulnerabilidad de manera responsable a quienes deben actuar.</p>
+<p>Una herramienta puede ser buena en una de estas tareas y débil en otra. Por ejemplo, un LLM puede explicar un hallazgo de forma clara, pero no generar un parche correcto. Un escáner puede detectar una dependencia vulnerable, pero no saber si esa funcionalidad se usa en producción.</p>
+<p>Separar las tareas evita una conclusión apresurada. Que una herramienta ayude a detectar no implica que pueda priorizar, reparar o cerrar el ciclo sin validación.</p>
 </div>
 </details>
 
 <details class="qa">
-<summary>¿Qué diferencia hay entre falso positivo y falso negativo?</summary>
-<div class="respuesta">
-<p>Un falso positivo ocurre cuando una herramienta reporta un problema que no representa una vulnerabilidad real o accionable en ese contexto. Puede deberse a una regla demasiado amplia, falta de contexto o una dependencia presente pero no usada de forma vulnerable.</p>
-<p>Un falso negativo ocurre cuando existe una vulnerabilidad real y la herramienta no la detecta. Es especialmente peligroso porque produce una falsa sensación de seguridad.</p>
-<p>Ambos importan. Los falsos positivos consumen tiempo y pueden erosionar confianza en las herramientas. Los falsos negativos dejan riesgo sin visibilidad. Por eso los resultados deben revisarse, calibrarse y complementarse con otros métodos.</p>
-</div>
-</details>
-
-<details class="qa">
-<summary>¿Por qué un hallazgo de seguridad no termina cuando aparece en un reporte?</summary>
-<div class="respuesta">
-<p>Un reporte es el inicio de la gestión, no el cierre. Después de detectar un hallazgo hay que validar si aplica, entender impacto, priorizar, asignar responsable, remediar, probar y verificar que el problema desapareció.</p>
-<p>También hay que decidir si corresponde comunicación, seguimiento o cambios de proceso. Si el hallazgo revela una debilidad recurrente, puede requerir capacitación, regla de revisión, prueba automatizada o cambio de arquitectura.</p>
-<p>El valor real de una herramienta aparece cuando sus resultados se transforman en decisiones y mejoras. Sin ese ciclo, el análisis produce datos, pero no reduce riesgo.</p>
-</div>
-</details>
-
-<details class="qa">
-<summary>¿Qué enseña el caso LiteLLM sobre vulnerabilidades y cadena de suministro?</summary>
-<div class="respuesta">
-<p>El caso LiteLLM muestra que un incidente puede venir de la cadena de publicación y no solo del código propio. Versiones maliciosas de un paquete legítimo pueden afectar a usuarios que confían en el nombre del proyecto y en el repositorio de paquetes.</p>
-<p>Esto amplía la idea de vulnerabilidad. No se trata solo de una función mal escrita. También importan credenciales de publicación, integridad del paquete, automatización de CI/CD, permisos de herramientas y confianza en dependencias.</p>
-<p>La lección defensiva es que actualizar puede no ser suficiente. Si una versión maliciosa se instaló, puede haber credenciales expuestas, persistencia, actividad de red y efectos posteriores que requieren respuesta a incidentes.</p>
-</div>
-</details>
-
-<details class="qa">
-<summary>¿Por qué un archivo <code>.pth</code> malicioso en Python puede ser grave?</summary>
-<div class="respuesta">
-<p>Un archivo <code>.pth</code> puede influir en la inicialización del intérprete de Python. Si se abusa de ese mecanismo, código malicioso puede ejecutarse automáticamente cuando el entorno Python se inicia o cuando se carga la configuración del entorno.</p>
-<p>Esto es grave porque reduce la necesidad de que el usuario invoque una función específica del paquete comprometido. La instalación o inicialización del entorno puede transformarse en una oportunidad de ejecución.</p>
-<p>En incidentes de cadena de suministro, este tipo de mecanismo aumenta el impacto potencial. Puede permitir robo de credenciales, persistencia o preparación de etapas posteriores sin que el desarrollador lo note inmediatamente.</p>
-</div>
-</details>
-
-<details class="qa">
-<summary>¿Qué significa que un LLM detector de vulnerabilidades generalice fuera de distribución?</summary>
+<summary>¿Qué significa que un modelo generalice fuera de distribución?</summary>
 <div class="respuesta">
 <p>Significa que el modelo mantiene buen desempeño cuando se evalúa en datos independientes, distintos de los usados para entrenar. En detección de vulnerabilidades, esto es crucial porque el mundo real no replica exactamente el conjunto de datos de entrenamiento.</p>
 <p>Un modelo puede obtener alta exactitud dentro del mismo conjunto de datos y aun así fallar en muestras nuevas. Eso puede ocurrir si aprendió correlaciones superficiales, duplicados, estilos de código o marcas propias de la fuente original.</p>
@@ -235,11 +191,74 @@ Esta página funciona como una guía de autoevaluación para la sección de vuln
 </details>
 
 <details class="qa">
-<summary>¿Por qué los datos de entrenamiento son críticos para LLMs detectores de vulnerabilidades?</summary>
+<summary>¿Por qué los datos de entrenamiento son críticos en IA para vulnerabilidades?</summary>
 <div class="respuesta">
 <p>Los datos de entrenamiento determinan qué patrones puede aprender el modelo. Si los datos tienen duplicados, etiquetas incorrectas, clases desbalanceadas o ejemplos que no representan vulnerabilidades reales, el modelo puede aprender señales equivocadas.</p>
 <p>En detección de vulnerabilidades, esto es especialmente sensible porque muchas debilidades son raras, contextuales y difíciles de etiquetar. Un modelo entrenado con datos ruidosos puede parecer efectivo en pruebas internas y fallar cuando enfrenta código real.</p>
 <p>Por eso, la calidad del conjunto de datos no es un detalle secundario. Es parte central de la validez del detector y de la confianza que se puede tener en sus resultados.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>¿Qué enseñan BenchVul y TitanVul sobre evaluación de detectores?</summary>
+<div class="respuesta">
+<p>BenchVul y TitanVul muestran que la evaluación de detectores no puede depender solo de conjuntos públicos ruidosos. BenchVul se construye como benchmark curado para evaluar generalización. TitanVul busca mejorar entrenamiento mediante consolidación, deduplicación y validación de datos.</p>
+<p>La tensión principal es que un modelo puede verse fuerte dentro de distribución y débil fuera de ella. En la lectura, un modelo entrenado con BigVul obtiene buen resultado interno, pero cae casi al azar en BenchVul real. Un modelo entrenado con TitanVul logra mejor desempeño fuera de distribución.</p>
+<p>La lección es que el benchmark no es un trámite. Define qué significa tener evidencia. Si la evaluación se parece demasiado al entrenamiento, puede medir familiaridad con datos y no comprensión de vulnerabilidades.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>¿Qué significa que la adopción de IA en gestión de vulnerabilidades sea socio-técnica?</summary>
+<div class="respuesta">
+<p>Significa que el uso de IA no depende solo del modelo o de la herramienta. También depende de personas, flujos de trabajo, políticas, tickets, revisiones, restricciones de privacidad, cumplimiento, costos e integración con CI/CD.</p>
+<p>El estudio industrial de Kholoosi, Le y Babar muestra que la IA se usa en varias etapas del ciclo de gestión, pero normalmente como apoyo y no como autoridad final. La mayoría de los participantes trata sus salidas como recomendaciones que requieren revisión humana.</p>
+<p>Esto cambia la pregunta de diseño. No basta con preguntar si la herramienta acierta. Hay que preguntar cómo entra al proceso, quién valida, qué evidencia se registra y qué ocurre cuando la herramienta se equivoca.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>¿Por qué una experiencia positiva con IA no equivale a confianza total?</summary>
+<div class="respuesta">
+<p>Una experiencia positiva puede significar que la herramienta ahorra tiempo, mejora cobertura o ayuda a explicar hallazgos. Eso no implica que sus resultados sean correctos en todos los casos ni que puedan aceptarse sin revisión.</p>
+<p>En la lectura, los practicantes valoran rapidez y accesibilidad, pero también reportan falsos positivos, falta de contexto, dudas de confianza y problemas de integración. Es posible que una herramienta sea útil y limitada al mismo tiempo.</p>
+<p>En seguridad, la confianza debe basarse en evidencia, no solo en satisfacción. Una herramienta puede ser parte del flujo, pero sus salidas deben contrastarse con código, pruebas, contexto y criterios de riesgo.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>¿Por qué Exact Match no basta para evaluar reparación automática?</summary>
+<div class="respuesta">
+<p>Exact Match compara si el parche generado es idéntico al parche de referencia. El problema es que una vulnerabilidad puede tener más de una corrección válida. Un parche puede diferir textual o estructuralmente de la referencia y aun así eliminar la vulnerabilidad.</p>
+<p>Han et al. muestran que, en L-AVRBench, muchos parches correctos no coinciden exactamente con la referencia. Esto vuelve injusta una evaluación puramente textual, porque castiga soluciones funcionalmente equivalentes.</p>
+<p>La reparación de vulnerabilidades exige comprobar más que similitud de texto. Hay que evaluar compilación, comportamiento funcional, seguridad y razonabilidad de la corrección.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>¿Qué aporta una evaluación basada en pruebas como L-AVRBench?</summary>
+<div class="respuesta">
+<p>Una evaluación basada en pruebas permite observar si el parche generado compila, preserva funcionalidad y mitiga la vulnerabilidad. Esto se acerca más al objetivo de reparación que comparar tokens con un parche de referencia.</p>
+<p>L-AVRBench incorpora funciones C/C++ vulnerables con pruebas ejecutables. Su valor está en que permite distinguir entre parches que solo se parecen a una solución y parches que efectivamente pasan pruebas funcionales y de seguridad.</p>
+<p>Aun así, las pruebas no son garantía absoluta. Un parche puede pasar los casos disponibles y dejar caminos no cubiertos. Por eso la lectura combina evaluación automática con revisión manual de la razonabilidad del parche.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>¿Por qué un parche que compila no necesariamente es un parche seguro?</summary>
+<div class="respuesta">
+<p>Compilar solo demuestra que el código cumple las reglas sintácticas y de tipos del lenguaje. No demuestra que el comportamiento esperado se mantenga ni que la vulnerabilidad haya sido eliminada.</p>
+<p>Un parche puede compilar y aun así romper funcionalidad, omitir casos límite, introducir una nueva debilidad o cerrar solo una parte del vector de ataque. En seguridad, eso puede generar una falsa sensación de cierre.</p>
+<p>Por eso, la aceptación de un parche debe incluir pruebas funcionales, pruebas de seguridad, revisión de contexto y análisis de impacto. La reparación automática necesita más validación que una simple compilación exitosa.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>¿Cómo se complementan CodeQL, Grype y un LLM en un flujo de gestión?</summary>
+<div class="respuesta">
+<p>CodeQL ayuda a analizar código propio mediante consultas sobre patrones y flujos. Grype ayuda a identificar vulnerabilidades conocidas en componentes y dependencias. Un LLM puede apoyar lectura, explicación, clasificación inicial, generación de hipótesis y borradores de remediación.</p>
+<p>No responden la misma pregunta. CodeQL puede mostrar una ruta de datos peligrosa. Grype puede mostrar que una versión de dependencia tiene un CVE. Un LLM puede ayudar a entender el contexto o sugerir próximos pasos, pero no sustituye la evidencia de las otras herramientas.</p>
+<p>Un flujo maduro combina señales. Revisa si los hallazgos son alcanzables, si afectan activos relevantes, si hay parches disponibles y si las acciones propuestas realmente reducen riesgo.</p>
 </div>
 </details>
 
@@ -269,15 +288,6 @@ Esta página funciona como una guía de autoevaluación para la sección de vuln
 <p>No. Significa que la herramienta puede tener menos fuentes para construir el inventario de dependencias. El repositorio podría usar binarios incluidos manualmente, dependencias del sistema operativo, imágenes de contenedor, scripts de instalación o paquetes resueltos fuera de los manifiestos tradicionales.</p>
 <p>También puede ocurrir que el proyecto tenga dependencias en archivos no soportados por la herramienta o que el artefacto final incorpore componentes durante la construcción.</p>
 <p>La conclusión correcta es que el alcance del escaneo fue limitado. Para afirmar con más confianza que no hay vulnerabilidades en dependencias, habría que analizar el artefacto construido, imágenes, entorno de ejecución o SBOM asociado.</p>
-</div>
-</details>
-
-<details class="qa">
-<summary>Si CodeQL analiza solo el lenguaje principal del repositorio, ¿qué riesgo aparece?</summary>
-<div class="respuesta">
-<p>El riesgo es dejar sin analizar partes relevantes del código escritas en otros lenguajes. Muchos proyectos son mixtos. Pueden tener backend en Python, frontend en JavaScript, scripts de despliegue, infraestructura como código o componentes auxiliares.</p>
-<p>Si el análisis se limita al lenguaje más frecuente, pueden quedar fuera rutas de ataque importantes. Por ejemplo, un repositorio mayoritariamente Python podría contener JavaScript expuesto al usuario o scripts de automatización con manejo de secretos.</p>
-<p>La decisión puede ser razonable por simplicidad y rendimiento, pero debe documentarse como una limitación. Para proyectos críticos, conviene ejecutar análisis por lenguaje o complementar con otras herramientas.</p>
 </div>
 </details>
 
@@ -336,15 +346,6 @@ Esta página funciona como una guía de autoevaluación para la sección de vuln
 </details>
 
 <details class="qa">
-<summary>Si mapeas un incidente a MITRE ATT&CK, ¿qué valor agrega?</summary>
-<div class="respuesta">
-<p>Agrega una forma estructurada de describir comportamiento adversario. En vez de listar acciones sueltas, puedes vincularlas con técnicas conocidas, como ejecución por hooks de inicio, robo de credenciales o despliegue de contenedores.</p>
-<p>Esto facilita comunicación entre equipos, comparación con otros incidentes y diseño de detecciones. También ayuda a pensar qué otras acciones podría intentar un atacante si ya observaste una técnica.</p>
-<p>El mapeo no prueba por sí solo que algo ocurrió. Debe estar respaldado por evidencia. Su valor está en organizar la interpretación y conectar el caso con patrones defensivos más amplios.</p>
-</div>
-</details>
-
-<details class="qa">
 <summary>Si un LLM detecta una vulnerabilidad y explica su razonamiento, ¿deberías confiar en la explicación?</summary>
 <div class="respuesta">
 <p>No deberías confiar solo por la fluidez de la explicación. Los LLMs pueden producir explicaciones plausibles pero incorrectas. En seguridad, una justificación convincente debe contrastarse con el código, el flujo de datos, la configuración y el modelo de amenazas.</p>
@@ -372,11 +373,92 @@ Esta página funciona como una guía de autoevaluación para la sección de vuln
 </details>
 
 <details class="qa">
-<summary>Si un detector aprende a reconocer código "parecido a vulnerable", ¿por qué eso no basta?</summary>
+<summary>Si una CWE crítica aparece poco en los datos, ¿cómo debería cambiar la evaluación?</summary>
 <div class="respuesta">
-<p>No basta porque la detección de vulnerabilidades exige distinguir una debilidad explotable de código seguro o corregido que puede parecer similar. Dos funciones pueden tener estructura parecida, pero diferir en una validación, una comprobación de permisos o una sanitización clave.</p>
-<p>Si el modelo solo aprende señales generales de código sospechoso, puede fallar al comparar una vulnerabilidad con su corrección. Esto produce falsos positivos y falsos negativos difíciles de confiar.</p>
-<p>Un detector útil debe capturar el detalle semántico de la debilidad. Debe entender qué condición permite abuso y por qué el cambio de corrección modifica esa condición.</p>
+<p>La evaluación no debería depender solo del promedio global. Un modelo puede tener buen desempeño promedio porque acierta clases frecuentes y aun así fallar en debilidades raras pero críticas.</p>
+<p>Conviene reportar desempeño por CWE, especialmente en clases poco representadas. También puede ser necesario balancear benchmarks, generar datos adicionales validados o usar evaluación específica para clases de alto impacto.</p>
+<p>La decisión defensiva debe considerar riesgo, no solo frecuencia. Una debilidad poco común puede ser muy grave si permite exposición de credenciales, ejecución remota o bypass de autenticación.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>Si una herramienta de IA reduce tiempo de análisis pero aumenta revisión manual, ¿cómo medirías su productividad?</summary>
+<div class="respuesta">
+<p>No mediría solo tiempo de respuesta de la herramienta. Mediría el ciclo completo, incluyendo revisión humana, validación técnica, corrección de falsos positivos, pruebas, documentación y cierre del ticket.</p>
+<p>También miraría calidad de los resultados. Una herramienta rápida pero ruidosa puede desplazar trabajo hacia revisión. Una herramienta más lenta pero precisa puede ahorrar tiempo total si reduce retrabajo.</p>
+<p>En gestión de vulnerabilidades, productividad real significa reducir riesgo con evidencia. Por eso conviene medir tiempo hasta remediación validada, tasa de falsos positivos, cobertura útil, aceptación de parches y costo de verificación.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>Si el 69% de los practicantes reporta satisfacción con IA, ¿qué conclusión sería apresurada?</summary>
+<div class="respuesta">
+<p>Sería apresurado concluir que la IA puede gestionar vulnerabilidades de forma autónoma. La satisfacción indica utilidad percibida, pero no elimina problemas de confianza, contexto, falsos positivos o validación.</p>
+<p>En el estudio industrial, la adopción positiva convive con supervisión humana y gobierno organizacional. Muchos practicantes usan IA como apoyo para acelerar o ampliar tareas, no como sustituto de revisión experta.</p>
+<p>La conclusión prudente es que la IA ya tiene valor práctico, pero ese valor depende de controles. La satisfacción debe leerse junto con cómo se valida la salida y quién asume responsabilidad por la decisión final.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>Si un equipo quiere dejar que la IA cierre automáticamente tickets de vulnerabilidad, ¿qué objeciones plantearías?</summary>
+<div class="respuesta">
+<p>La primera objeción es que cerrar un ticket requiere evidencia. Hay que demostrar que el hallazgo aplicaba, que la corrección fue implementada, que las pruebas pasan y que el riesgo fue reducido o aceptado formalmente.</p>
+<p>La segunda objeción es la responsabilidad. Si la IA cierra un ticket por error, el equipo debe saber quién revisó, qué evidencia se usó y cómo se detectará una regresión o explotación posterior.</p>
+<p>Una alternativa más segura es que la IA proponga cierre con evidencia adjunta. El cierre final debería pasar por revisión humana o por reglas automatizadas bien definidas, trazables y limitadas a casos de bajo riesgo.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>Si un LLM propone un parche que pasa las pruebas unitarias, ¿qué revisarías antes de aceptarlo?</summary>
+<div class="respuesta">
+<p>Revisaría si las pruebas cubren la condición de seguridad que originó el hallazgo. Pasar pruebas unitarias generales no demuestra que la vulnerabilidad haya sido corregida.</p>
+<p>También revisaría si el parche preserva comportamiento esperado, no introduce efectos secundarios, no elimina validaciones importantes y no crea una nueva debilidad. Si el cambio afecta autenticación, autorización, criptografía o manejo de entradas, la revisión debe ser especialmente estricta.</p>
+<p>Finalmente, pediría evidencia de seguridad. Puede ser una prueba de regresión específica, un caso que antes explotaba y ahora falla, una consulta CodeQL que deja de reportar el flujo o una verificación manual del modelo de amenazas.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>Si un parche generado por IA no coincide con el parche de referencia, ¿debe rechazarse?</summary>
+<div class="respuesta">
+<p>No necesariamente. En reparación de vulnerabilidades puede haber varias soluciones válidas. Un parche puede diferir del arreglo original y aun así eliminar la condición vulnerable.</p>
+<p>La comparación textual con una referencia sirve como señal, pero no como criterio absoluto. Exact Match puede castigar soluciones correctas que usan otra estructura, otra constante o una validación equivalente.</p>
+<p>La decisión debería basarse en pruebas funcionales, pruebas de seguridad y revisión de razonabilidad. Si el parche conserva comportamiento, elimina el vector de ataque y se integra bien al proyecto, puede ser aceptable aunque no sea idéntico al parche histórico.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>Si un parche generado por IA elimina la vulnerabilidad pero rompe funcionalidad, ¿cómo lo clasificarías?</summary>
+<div class="respuesta">
+<p>Lo clasificaría como una corrección incompleta o no aceptable. Reducir el riesgo de seguridad no basta si el cambio rompe comportamiento esencial del sistema.</p>
+<p>En la lógica de evaluación de reparación automática, este tipo de salida puede ser no funcionalmente correcta. Puede bloquear el vector vulnerable, pero a costa de cambiar lo que el programa debía hacer.</p>
+<p>Una reparación útil debe equilibrar seguridad y funcionalidad. Si no se puede lograr de inmediato, el equipo debe decidir entre mitigación temporal, rediseño, parche manual o aceptación de riesgo documentada.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>Si un parche pasa pruebas funcionales y de seguridad, ¿por qué aún podría necesitar revisión humana?</summary>
+<div class="respuesta">
+<p>Porque las pruebas no cubren todo el espacio posible de entradas, configuraciones y usos. Un parche puede pasar los casos disponibles y aun así dejar un camino no cubierto o introducir una debilidad en otro contexto.</p>
+<p>La revisión humana puede detectar problemas de diseño, inconsistencias con el estilo del proyecto, efectos sobre mantenibilidad, requisitos regulatorios o supuestos no representados en las pruebas.</p>
+<p>En seguridad, las pruebas son evidencia fuerte, pero no son toda la evidencia. La revisión humana ayuda a interpretar el cambio dentro del sistema completo.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>Si un equipo usa un LLM externo para analizar vulnerabilidades, ¿qué riesgos de gobierno aparecen?</summary>
+<div class="respuesta">
+<p>Aparecen riesgos de confidencialidad, privacidad, cumplimiento y trazabilidad. El equipo puede enviar código propietario, secretos, fragmentos de arquitectura, datos de clientes o información sobre vulnerabilidades no divulgadas a un servicio externo.</p>
+<p>También aparece el problema de auditoría. Hay que saber qué se envió, qué respondió el modelo, quién revisó la salida y si esa salida influyó en una decisión de seguridad.</p>
+<p>Una política madura debería definir qué datos pueden compartirse, qué modelos están permitidos, cómo se registran las decisiones y cuándo se requiere una herramienta local o aprobada por la organización.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>Si diseñaras puntos de validación para IA en un pipeline de vulnerabilidades, ¿dónde los pondrías?</summary>
+<div class="respuesta">
+<p>Pondría un primer punto después de la detección, para confirmar que el hallazgo aplica y no es solo ruido. Pondría otro antes de priorizar, para incorporar exposición, severidad, activos afectados y contexto de negocio.</p>
+<p>Pondría un punto fuerte antes de aceptar un parche, con revisión de código, pruebas funcionales y pruebas de seguridad. También pondría una verificación después del merge o despliegue, para confirmar que el hallazgo ya no aparece y que no hubo regresión.</p>
+<p>Además, registraría evidencia en el ticket. La IA puede acelerar análisis, pero el flujo debe conservar trazabilidad sobre qué se aceptó, por qué y con qué evidencia.</p>
 </div>
 </details>
 
@@ -390,10 +472,10 @@ Esta página funciona como una guía de autoevaluación para la sección de vuln
 </details>
 
 <details class="qa">
-<summary>Si tuvieras que priorizar hallazgos de CodeQL y Grype en una misma semana, ¿qué criterios usarías?</summary>
+<summary>Si tuvieras que priorizar hallazgos de CodeQL, Grype y un LLM en una misma semana, ¿qué criterios usarías?</summary>
 <div class="respuesta">
 <p>Usaría severidad técnica, exposición, explotabilidad, criticidad del activo, disponibilidad de corrección y evidencia de explotación activa. También consideraría si el hallazgo afecta datos sensibles, autenticación, autorización o ejecución remota.</p>
-<p>Para CodeQL, revisaría si el flujo vulnerable es alcanzable por entradas no confiables y si falta un control real. Para Grype, revisaría si la dependencia afectada está en el artefacto productivo, si se usa la funcionalidad vulnerable y si existe versión de corrección.</p>
+<p>Para CodeQL, revisaría si el flujo vulnerable es alcanzable por entradas no confiables y si falta un control real. Para Grype, revisaría si la dependencia afectada está en el artefacto productivo, si se usa la funcionalidad vulnerable y si existe versión de corrección. Para un LLM, pediría evidencia verificable y no solo una explicación plausible.</p>
 <p>La prioridad final debería equilibrar impacto y factibilidad. A veces una actualización de dependencia crítica es rápida. Otras veces un hallazgo de código propio requiere rediseño. La gestión debe ser explícita y trazable.</p>
 </div>
 </details>
@@ -426,10 +508,19 @@ Esta página funciona como una guía de autoevaluación para la sección de vuln
 </details>
 
 <details class="qa">
-<summary>Si diseñaras una política mínima de gestión de vulnerabilidades para un equipo, ¿qué exigirías?</summary>
+<summary>Si diseñaras una política mínima de gestión de vulnerabilidades con IA, ¿qué exigirías?</summary>
 <div class="respuesta">
-<p>Exigiría escaneo periódico de código propio y dependencias, ejecución en CI/CD, registro de hallazgos, criterios de severidad y responsables claros. También definiría tiempos esperados de remediación según criticidad.</p>
-<p>La política debería incluir validación contextual. No todo hallazgo se bloquea automáticamente, pero toda excepción debe documentarse con razón, evidencia, fecha de revisión y responsable.</p>
-<p>También exigiría seguimiento. Después de corregir, se debe verificar que el hallazgo desapareció y que no se introdujo regresión. Para dependencias, conviene conservar inventarios o SBOMs que permitan responder ante CVEs nuevos.</p>
+<p>Exigiría escaneo periódico de código propio y dependencias, registro de hallazgos, criterios de severidad, responsables claros y tiempos esperados de remediación según criticidad.</p>
+<p>Para la IA, exigiría reglas adicionales. Toda salida debe tratarse como recomendación hasta que exista validación. Los parches generados deben pasar revisión de código, pruebas funcionales y pruebas de seguridad. Las decisiones deben quedar trazadas en tickets o registros equivalentes.</p>
+<p>También definiría límites de uso. No todo código o información sensible puede enviarse a herramientas externas. Toda excepción debe documentarse con razón, evidencia, fecha de revisión y responsable.</p>
+</div>
+</details>
+
+<details class="qa">
+<summary>Si tuvieras que cerrar una vulnerabilidad asistida por IA, ¿qué evidencia mínima pedirías?</summary>
+<div class="respuesta">
+<p>Pediría identificación del hallazgo, explicación de por qué aplica, evidencia de alcance, decisión de severidad o riesgo, cambio aplicado y responsable de revisión.</p>
+<p>También pediría pruebas. Si era código propio, una prueba de regresión o una consulta que demuestre que el flujo vulnerable ya no existe. Si era dependencia, evidencia de actualización o mitigación y confirmación de que el artefacto final ya no contiene la versión afectada.</p>
+<p>Finalmente, pediría trazabilidad sobre la IA. Si el modelo sugirió diagnóstico o parche, debe quedar claro qué parte fue aceptada, qué fue modificada y quién asumió la decisión final.</p>
 </div>
 </details>
