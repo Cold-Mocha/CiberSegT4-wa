@@ -8,8 +8,6 @@ format:
     callout-appearance: simple
 ---
 
-# SBOMs en la actualidad
-
 Hasta ahora hemos presentado los **Software Bill of Materials** como una respuesta técnica a un problema real. No basta con saber que una aplicación funciona. También necesitamos saber de qué está hecha, qué versiones usa, qué licencias arrastra y qué relaciones existen entre sus componentes.
 
 La idea es poderosa. Un SBOM promete visibilidad, trazabilidad y una base automatizable para responder ante vulnerabilidades. También permite revisar licencias y gestionar riesgos de la cadena de suministro. Los estudios incluidos en `data/papers` muestran una tensión importante. La promesa de los SBOMs está más madura que muchas de sus prácticas reales.

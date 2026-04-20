@@ -8,8 +8,6 @@ format:
     callout-appearance: simple
 ---
 
-# LLMs como detectores de vulnerabilidades
-
 Los modelos de lenguaje se han vuelto atractivos para tareas de seguridad de software. Pueden leer código, explicar fragmentos, comparar versiones, sugerir reparaciones y clasificar funciones como vulnerables o no vulnerables. Esta capacidad parece encajar naturalmente con el análisis de vulnerabilidades. Si un modelo puede razonar sobre código, ¿por qué no usarlo como detector?
 
 El artículo base de esta lectura plantea una tensión central. El problema no es solo si un modelo logra buen desempeño en un conjunto de prueba. El problema es si ese desempeño se mantiene cuando el modelo enfrenta vulnerabilidades fuera de la distribución de entrenamiento (Li et al., 2026).
