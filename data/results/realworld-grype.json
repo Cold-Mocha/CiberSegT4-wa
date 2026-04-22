@@ -1,0 +1,159 @@
+{
+  "total_vulnerabilities": 13,
+  "vulnerabilities_by_severity": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 13
+  },
+  "vulnerabilities": [
+    {
+      "package_name": "picomatch",
+      "current_version": "4.0.3",
+      "vuln_id": "GHSA-3v7f-55p6-f55p",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "devalue",
+      "current_version": "5.6.3",
+      "vuln_id": "GHSA-cfw5-2vxh-hr84",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "devalue has prototype pollution in devalue.parse and devalue.unflatten",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "@sveltejs/kit",
+      "current_version": "2.52.2",
+      "vuln_id": "GHSA-2crg-3p73-43xp",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "@sveltejs/adapter-node has a BODY_SIZE_LIMIT bypass",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "cookie",
+      "current_version": "0.6.0",
+      "vuln_id": "GHSA-pxg6-pf52-xh8x",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "cookie accepts cookie name, path, and domain with out of bounds characters",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "picomatch",
+      "current_version": "4.0.3",
+      "vuln_id": "GHSA-c2c7-rcm5-vvqj",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "brace-expansion",
+      "current_version": "5.0.2",
+      "vuln_id": "GHSA-f886-m6hf-6m8v",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "@sveltejs/kit",
+      "current_version": "2.52.2",
+      "vuln_id": "GHSA-3f6h-2hrp-w5wx",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "@sveltejs/kit: Unvalidated redirect in handle hook causes Denial-of-Service",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "minimatch",
+      "current_version": "10.2.2",
+      "vuln_id": "GHSA-7r86-cg39-jmmj",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "minimatch",
+      "current_version": "10.2.2",
+      "vuln_id": "GHSA-23c5-xmqv-rm74",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "tar",
+      "current_version": "7.5.9",
+      "vuln_id": "GHSA-9ppj-qmqm-q256",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "tar",
+      "current_version": "7.5.9",
+      "vuln_id": "GHSA-qffp-2rhf-9h96",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "tar has Hardlink Path Traversal via Drive-Relative Linkpath",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "@sveltejs/kit",
+      "current_version": "2.52.2",
+      "vuln_id": "GHSA-fpg4-jhqr-589c",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "SvelteKit  has deserialization expansion in unvalidated `form` remote function leading to Denial of Service (experimental only)",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "devalue",
+      "current_version": "5.6.3",
+      "vuln_id": "GHSA-mwv9-gp5h-frr4",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Sveltejs devalue's `devalue.parse` and `devalue.unflatten` emit objects with `__proto__` own properties",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    }
+  ],
+  "grype_metadata": {
+    "grype_version": "unknown",
+    "db_location": "",
+    "scanned_path": "/workspaces/ciberseguridad_2026/data/repos/realworld"
+  }
+}

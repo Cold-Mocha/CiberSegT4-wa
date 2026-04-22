@@ -1,0 +1,537 @@
+{
+  "total_issues": 37,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 37,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "js/bad-tag-filter",
+      "rule_index": 8,
+      "level": "warning",
+      "message": "This regular expression does not match upper case <SCRIPT> tags.",
+      "file": "packages/site-kit/src/lib/markdown/renderer.ts",
+      "region": {
+        "startLine": 236,
+        "startColumn": 36,
+        "endColumn": 69
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/bad-tag-filter",
+      "rule_index": 8,
+      "level": "warning",
+      "message": "This regular expression does not match upper case <SCRIPT> tags.",
+      "file": "packages/site-kit/src/lib/markdown/renderer.ts",
+      "region": {
+        "startLine": 693,
+        "startColumn": 30,
+        "endColumn": 58
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/double-escaping",
+      "rule_index": 10,
+      "level": "warning",
+      "message": "This replacement may produce '&' characters that are double-unescaped [here](1).",
+      "file": "packages/site-kit/src/lib/markdown/utils.ts",
+      "region": {
+        "startLine": 56,
+        "startColumn": 9,
+        "endLine": 59,
+        "endColumn": 26
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/shell-command-injection-from-environment",
+      "rule_index": 25,
+      "level": "warning",
+      "message": "This shell command depends on an uncontrolled [file name](1).",
+      "file": "apps/svelte.dev/scripts/sync-packages/index.ts",
+      "region": {
+        "startLine": 273,
+        "startColumn": 11,
+        "endColumn": 37
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/code-injection",
+      "rule_index": 44,
+      "level": "warning",
+      "message": "This code execution depends on a [user-provided value](1).",
+      "file": "packages/repl/src/lib/Output/srcdoc/index.html",
+      "region": {
+        "startLine": 45,
+        "startColumn": 18,
+        "endColumn": 34
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/code-injection",
+      "rule_index": 44,
+      "level": "warning",
+      "message": "This code execution depends on a [user-provided value](1).\nThis code execution depends on a [user-provided value](2).",
+      "file": "packages/repl/src/lib/workers/npm.ts",
+      "region": {
+        "startLine": 39,
+        "startColumn": 13,
+        "endColumn": 61
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/incomplete-url-substring-sanitization",
+      "rule_index": 59,
+      "level": "warning",
+      "message": "'[github.com](1)' may be followed by an arbitrary host name.",
+      "file": "apps/svelte.dev/scripts/sync-packages/index.ts",
+      "region": {
+        "startLine": 136,
+        "startColumn": 6,
+        "endColumn": 39
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/polynomial-redos",
+      "rule_index": 80,
+      "level": "warning",
+      "message": "This [regular expression](1) that depends on [library input](2) may run slow on strings starting with '**' and with many repetitions of 'b**a'.\nThis [regular expression](1) that depends on [library input](3) may run slow on strings starting with '**' and with many repetitions of 'b**a'.",
+      "file": "packages/site-kit/src/lib/markdown/utils.ts",
+      "region": {
+        "startLine": 39,
+        "startColumn": 3,
+        "endLine": 40,
+        "endColumn": 51
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/client-side-request-forgery",
+      "rule_index": 84,
+      "level": "warning",
+      "message": "The [URL](1) of this request depends on a [user-provided value](2).\nThe [URL](1) of this request depends on a [user-provided value](3).",
+      "file": "packages/repl/src/lib/workers/npm.ts",
+      "region": {
+        "startLine": 101,
+        "startColumn": 19,
+        "endColumn": 29
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/client-side-request-forgery",
+      "rule_index": 84,
+      "level": "warning",
+      "message": "The [URL](1) of this request depends on a [user-provided value](2).",
+      "file": "packages/site-kit/src/lib/search/search-worker.ts",
+      "region": {
+        "startLine": 7,
+        "startColumn": 21,
+        "endColumn": 60
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 88,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/repl/src/lib/workers/compiler/index.ts",
+      "region": {
+        "startLine": 23,
+        "startColumn": 8,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/remote-property-injection",
+      "rule_index": 88,
+      "level": "warning",
+      "message": "A property name to write to depends on a [user-provided value](1).",
+      "file": "packages/repl/src/lib/workers/compiler/index.ts",
+      "region": {
+        "startLine": 25,
+        "startColumn": 16,
+        "endColumn": 23
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "apps/svelte.dev/scripts/create-tutorial-zip/index.js",
+      "region": {
+        "startLine": 68,
+        "startColumn": 2,
+        "endColumn": 70
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "apps/svelte.dev/scripts/get_contributors.js",
+      "region": {
+        "startLine": 69,
+        "startColumn": 2,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "apps/svelte.dev/scripts/get_donors.js",
+      "region": {
+        "startLine": 66,
+        "startColumn": 2,
+        "endColumn": 42
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-system-race",
+      "rule_index": 92,
+      "level": "warning",
+      "message": "The file may have changed since it [was checked](1).",
+      "file": "apps/svelte.dev/scripts/get_svelte_template.js",
+      "region": {
+        "startLine": 85,
+        "startColumn": 2,
+        "endColumn": 51
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "packages/repl/src/lib/workers/bundler/index.ts",
+      "region": {
+        "startLine": 47,
+        "startColumn": 41,
+        "endColumn": 46
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "packages/repl/src/lib/workers/compiler/index.ts",
+      "region": {
+        "startLine": 15,
+        "startColumn": 36,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/missing-origin-check",
+      "rule_index": 93,
+      "level": "warning",
+      "message": "Postmessage handler has no origin check.",
+      "file": "packages/site-kit/src/lib/search/search-worker.ts",
+      "region": {
+        "startLine": 3,
+        "startColumn": 36,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/file-access-to-http",
+      "rule_index": 97,
+      "level": "warning",
+      "message": "Outbound network request depends on [file data](1).",
+      "file": "apps/svelte.dev/scripts/sync-packages/index.ts",
+      "region": {
+        "startLine": 281,
+        "startColumn": 28,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/http-to-file-access",
+      "rule_index": 99,
+      "level": "warning",
+      "message": "Write to file system depends on [Untrusted data](1).",
+      "file": "apps/svelte.dev/scripts/get_contributors.js",
+      "region": {
+        "startLine": 69,
+        "startColumn": 17,
+        "endColumn": 41
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-assignment-to-local",
+      "rule_index": 103,
+      "level": "warning",
+      "message": "The value assigned to index here is unused.",
+      "file": "apps/svelte.dev/src/lib/server/llms.ts",
+      "region": {
+        "startLine": 120,
+        "startColumn": 5,
+        "endColumn": 18
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/use-before-declaration",
+      "rule_index": 105,
+      "level": "warning",
+      "message": "Variable 'self' is used before its [declaration](1).",
+      "file": "packages/repl/src/lib/workers/compiler/index.ts",
+      "region": {
+        "startLine": 9,
+        "endColumn": 5
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 108,
+      "level": "warning",
+      "message": "Unused import on.",
+      "file": "apps/svelte.dev/content/tutorial/01-svelte/08-attachments/01-attach/+assets/app-a/src/lib/attachments.svelte.js",
+      "region": {
+        "startLine": 1,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 108,
+      "level": "warning",
+      "message": "Unused variable previous.",
+      "file": "apps/svelte.dev/content/tutorial/01-svelte/08-attachments/01-attach/+assets/app-a/src/lib/attachments.svelte.js",
+      "region": {
+        "startLine": 4,
+        "startColumn": 8,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 108,
+      "level": "warning",
+      "message": "Unused function handleKeydown.",
+      "file": "apps/svelte.dev/content/tutorial/01-svelte/08-attachments/01-attach/+assets/app-a/src/lib/attachments.svelte.js",
+      "region": {
+        "startLine": 10,
+        "startColumn": 11,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 108,
+      "level": "warning",
+      "message": "Unused variable match.",
+      "file": "packages/repl/src/lib/workers/bundler/plugins/replace.ts",
+      "region": {
+        "startLine": 38,
+        "startColumn": 8,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 108,
+      "level": "warning",
+      "message": "Unused variable start.",
+      "file": "packages/repl/src/lib/workers/bundler/plugins/replace.ts",
+      "region": {
+        "startLine": 39,
+        "startColumn": 8,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 108,
+      "level": "warning",
+      "message": "Unused variable end.",
+      "file": "packages/repl/src/lib/workers/bundler/plugins/replace.ts",
+      "region": {
+        "startLine": 40,
+        "startColumn": 8,
+        "endColumn": 11
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 108,
+      "level": "warning",
+      "message": "Unused variable replacement.",
+      "file": "packages/repl/src/lib/workers/bundler/plugins/replace.ts",
+      "region": {
+        "startLine": 41,
+        "startColumn": 8,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 108,
+      "level": "warning",
+      "message": "Unused import vitePreprocess.",
+      "file": "packages/repl/svelte.config.js",
+      "region": {
+        "startLine": 2,
+        "endColumn": 63
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/unused-local-variable",
+      "rule_index": 108,
+      "level": "warning",
+      "message": "Unused import CompletionContext.",
+      "file": "packages/site-kit/src/lib/codemirror/index.js",
+      "region": {
+        "startLine": 4,
+        "endColumn": 81
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/trivial-conditional",
+      "rule_index": 126,
+      "level": "warning",
+      "message": "This use of variable 'tailwind' always evaluates to false.",
+      "file": "packages/repl/src/lib/workers/bundler/index.ts",
+      "region": {
+        "startLine": 496,
+        "startColumn": 7,
+        "endColumn": 15
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/superfluous-trailing-arguments",
+      "rule_index": 137,
+      "level": "warning",
+      "message": "Superfluous arguments passed to [function is_state_call](1).",
+      "file": "packages/site-kit/src/lib/codemirror/autocompletionDataProvider.js",
+      "region": {
+        "startLine": 581,
+        "startColumn": 23,
+        "endColumn": 40
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/syntax-error",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "Error: Unexpected token",
+      "file": "apps/svelte.dev/content/tutorial/+assets/src/__client.js",
+      "region": {
+        "startLine": 100,
+        "startColumn": 8,
+        "endColumn": 9
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/syntax-error",
+      "rule_index": 142,
+      "level": "warning",
+      "message": "Error: Unexpected token",
+      "file": "apps/svelte.dev/scripts/create-tutorial-zip/common/src/__client.js",
+      "region": {
+        "startLine": 100,
+        "startColumn": 8,
+        "endColumn": 9
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "js/useless-expression",
+      "rule_index": 162,
+      "level": "warning",
+      "message": "This expression has no effect.",
+      "file": "packages/site-kit/src/lib/state/Persisted.svelte.ts",
+      "region": {
+        "startLine": 30,
+        "startColumn": 3,
+        "endColumn": 16
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}

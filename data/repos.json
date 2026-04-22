@@ -14,6 +14,96 @@
             "url": "https://github.com/anomalyco/opencode.git",
             "path": "data/repos/opencode",
             "ref": null
+        },
+        {
+            "url": "https://github.com/sveltejs/svelte.git",
+            "path": "data/repos/svelte",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/svelte-loader.git",
+            "path": "data/repos/svelte-loader",
+            "ref": "master"
+        },
+        {
+            "url": "https://github.com/sveltejs/realworld.git",
+            "path": "data/repos/realworld",
+            "ref": "master"
+        },
+        {
+            "url": "https://github.com/sveltejs/devalue.git",
+            "path": "data/repos/devalue",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/svelte-hmr.git",
+            "path": "data/repos/svelte-hmr",
+            "ref": "master"
+        },
+        {
+            "url": "https://github.com/sveltejs/language-tools.git",
+            "path": "data/repos/language-tools",
+            "ref": "master"
+        },
+        {
+            "url": "https://github.com/sveltejs/eslint-config.git",
+            "path": "data/repos/eslint-config",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/kit.git",
+            "path": "data/repos/kit",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/sites.git",
+            "path": "data/repos/sites",
+            "ref": "master"
+        },
+        {
+            "url": "https://github.com/sveltejs/vite-plugin-svelte.git",
+            "path": "data/repos/vite-plugin-svelte",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/svelte-eslint-parser.git",
+            "path": "data/repos/svelte-eslint-parser",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/eslint-plugin-svelte.git",
+            "path": "data/repos/eslint-plugin-svelte",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/svelte-ecosystem-ci.git",
+            "path": "data/repos/svelte-ecosystem-ci",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/dts-buddy.git",
+            "path": "data/repos/dts-buddy",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/esrap.git",
+            "path": "data/repos/esrap",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/svelte.dev.git",
+            "path": "data/repos/svelte.dev",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/cli.git",
+            "path": "data/repos/cli",
+            "ref": "main"
+        },
+        {
+            "url": "https://github.com/sveltejs/ai-tools.git",
+            "path": "data/repos/ai-tools",
+            "ref": "main"
         }
     ]
 }

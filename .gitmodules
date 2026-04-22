@@ -7,3 +7,150 @@
 [submodule "data/repos/opencode"]
 	path = data/repos/opencode
 	url = https://github.com/anomalyco/opencode.git
+[submodule "data/repos/spring-data-commons"]
+	path = data/repos/spring-data-commons
+	url = https://github.com/spring-projects/spring-data-commons.git
+[submodule "data/repos/spring-data-jpa"]
+	path = data/repos/spring-data-jpa
+[submodule "data/repos/spring-amqp"]
+	path = data/repos/spring-amqp
+[submodule "data/repos/spring-batch"]
+	path = data/repos/spring-batch
+[submodule "data/repos/spring-framework"]
+	path = data/repos/spring-framework
+[submodule "data/repos/spring-amqp-samples"]
+	path = data/repos/spring-amqp-samples
+[submodule "data/repos/spring-data-redis"]
+	path = data/repos/spring-data-redis
+[submodule "data/repos/spring-integration"]
+	path = data/repos/spring-integration
+[submodule "data/repos/spring-integration-samples"]
+	path = data/repos/spring-integration-samples
+[submodule "data/repos/spring-data-cassandra"]
+	path = data/repos/spring-data-cassandra
+[submodule "data/repos/spring-data-neo4j"]
+	path = data/repos/spring-data-neo4j
+[submodule "data/repos/spring-data-mongodb"]
+	path = data/repos/spring-data-mongodb
+[submodule "data/repos/spring-security"]
+	path = data/repos/spring-security
+[submodule "data/repos/spring-shell"]
+	path = data/repos/spring-shell
+[submodule "data/repos/spring-plugin"]
+	path = data/repos/spring-plugin
+[submodule "data/repos/spring-data-rest"]
+	path = data/repos/spring-data-rest
+[submodule "data/repos/spring-hateoas"]
+	path = data/repos/spring-hateoas
+[submodule "data/repos/spring-webflow-samples"]
+	path = data/repos/spring-webflow-samples
+[submodule "data/repos/spring-boot"]
+	path = data/repos/spring-boot
+[submodule "data/repos/spring-data-build"]
+	path = data/repos/spring-data-build
+[submodule "data/repos/spring-petclinic"]
+	path = data/repos/spring-petclinic
+[submodule "data/repos/spring-ws"]
+	path = data/repos/spring-ws
+[submodule "data/repos/spring-data-elasticsearch"]
+	path = data/repos/spring-data-elasticsearch
+[submodule "data/repos/spring-data-couchbase"]
+	path = data/repos/spring-data-couchbase
+[submodule "data/repos/spring-ldap"]
+	path = data/repos/spring-ldap
+[submodule "data/repos/spring-data-examples"]
+	path = data/repos/spring-data-examples
+[submodule "data/repos/spring-batch-extensions"]
+	path = data/repos/spring-batch-extensions
+[submodule "data/repos/spring-session"]
+	path = data/repos/spring-session
+[submodule "data/repos/spring-restdocs"]
+	path = data/repos/spring-restdocs
+[submodule "data/repos/spring-data-keyvalue"]
+	path = data/repos/spring-data-keyvalue
+[submodule "data/repos/spring-kafka"]
+	path = data/repos/spring-kafka
+[submodule "data/repos/spring-tools"]
+	path = data/repos/spring-tools
+[submodule "data/repos/spring-vault"]
+	path = data/repos/spring-vault
+[submodule "data/repos/spring-data-ldap"]
+	path = data/repos/spring-data-ldap
+[submodule "data/repos/spring-data-relational"]
+	path = data/repos/spring-data-relational
+[submodule "data/repos/spring-credhub"]
+	path = data/repos/spring-credhub
+[submodule "data/repos/spring-authorization-server"]
+	path = data/repos/spring-authorization-server
+[submodule "data/repos/spring-data-bom"]
+	path = data/repos/spring-data-bom
+[submodule "data/repos/spring-graphql"]
+	path = data/repos/spring-graphql
+[submodule "data/repos/spring-security-samples"]
+	path = data/repos/spring-security-samples
+[submodule "data/repos/spring-pulsar"]
+	path = data/repos/spring-pulsar
+[submodule "data/repos/spring-aot-smoke-tests"]
+	path = data/repos/spring-aot-smoke-tests
+[submodule "data/repos/spring-modulith"]
+	path = data/repos/spring-modulith
+[submodule "data/repos/spring-restdocs-samples"]
+	path = data/repos/spring-restdocs-samples
+[submodule "data/repos/spring-data-release"]
+	path = data/repos/spring-data-release
+[submodule "data/repos/spring-ai"]
+	path = data/repos/spring-ai
+[submodule "data/repos/security-advisories"]
+	path = data/repos/security-advisories
+[submodule "data/repos/spring-grpc"]
+	path = data/repos/spring-grpc
+[submodule "data/repos/spring-ai-integration-tests"]
+	path = data/repos/spring-ai-integration-tests
+[submodule "data/repos/spring-ai-examples"]
+	path = data/repos/spring-ai-examples
+[submodule "data/repos/openclaw"]
+	path = data/repos/openclaw
+[submodule "data/repos/nix-openclaw"]
+	path = data/repos/nix-openclaw
+[submodule "data/repos/clawhub"]
+	path = data/repos/clawhub
+[submodule "data/repos/nix-steipete-tools"]
+	path = data/repos/nix-steipete-tools
+[submodule "data/repos/openclaw.ai"]
+	path = data/repos/openclaw.ai
+[submodule "data/repos/svelte"]
+	path = data/repos/svelte
+[submodule "data/repos/svelte-loader"]
+	path = data/repos/svelte-loader
+[submodule "data/repos/realworld"]
+	path = data/repos/realworld
+[submodule "data/repos/devalue"]
+	path = data/repos/devalue
+[submodule "data/repos/svelte-hmr"]
+	path = data/repos/svelte-hmr
+[submodule "data/repos/language-tools"]
+	path = data/repos/language-tools
+[submodule "data/repos/eslint-config"]
+	path = data/repos/eslint-config
+[submodule "data/repos/kit"]
+	path = data/repos/kit
+[submodule "data/repos/sites"]
+	path = data/repos/sites
+[submodule "data/repos/vite-plugin-svelte"]
+	path = data/repos/vite-plugin-svelte
+[submodule "data/repos/svelte-eslint-parser"]
+	path = data/repos/svelte-eslint-parser
+[submodule "data/repos/eslint-plugin-svelte"]
+	path = data/repos/eslint-plugin-svelte
+[submodule "data/repos/svelte-ecosystem-ci"]
+	path = data/repos/svelte-ecosystem-ci
+[submodule "data/repos/dts-buddy"]
+	path = data/repos/dts-buddy
+[submodule "data/repos/esrap"]
+	path = data/repos/esrap
+[submodule "data/repos/svelte.dev"]
+	path = data/repos/svelte.dev
+[submodule "data/repos/cli"]
+	path = data/repos/cli
+[submodule "data/repos/ai-tools"]
+	path = data/repos/ai-tools

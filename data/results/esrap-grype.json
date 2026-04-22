@@ -1,0 +1,302 @@
+{
+  "total_vulnerabilities": 26,
+  "vulnerabilities_by_severity": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 26
+  },
+  "vulnerabilities": [
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-4r4m-qw57-chr8",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vite has a `server.fs.deny` bypassed for `inline` and `raw` with `?import` query",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-x574-m823-4x7w",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vite bypasses server.fs.deny when using ?raw??",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vitest",
+      "current_version": "2.1.1",
+      "vuln_id": "GHSA-9crc-q9x8-hgqq",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vitest allows Remote Code Execution when accessing a malicious website while Vitest API server is listening",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "rollup",
+      "current_version": "4.20.0",
+      "vuln_id": "GHSA-gcx4-mw62-g8wm",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-xcj6-pq6g-qj4x",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vite allows server.fs.deny to be bypassed with .svg or relative paths",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-859w-5945-r5v3",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vite's server.fs.deny bypassed with /. for files under project root",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-4w7w-66w2-5vf9",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-93m4-6634-74q7",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "vite allows server.fs.deny bypass via backslash on Windows",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-g4jq-h2w9-997c",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vite middleware may serve files starting with the same name with the public directory",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "rollup",
+      "current_version": "4.20.0",
+      "vuln_id": "GHSA-mw96-cpmx-2vgc",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Rollup 4 has Arbitrary File Write via Path Traversal",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-64vr-g452-qvp3",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vite DOM Clobbering gadget found in vite bundled scripts that leads to XSS",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-356w-63v5-8wf4",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vite has an `server.fs.deny` bypass with an invalid `request-target`",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "picomatch",
+      "current_version": "2.3.1",
+      "vuln_id": "GHSA-3v7f-55p6-f55p",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "picomatch",
+      "current_version": "4.0.2",
+      "vuln_id": "GHSA-3v7f-55p6-f55p",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-vg6x-rcgg-rjx6",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Websites were able to send any requests to the development server and read the response in vite",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "nanoid",
+      "current_version": "3.3.7",
+      "vuln_id": "GHSA-mwcw-c2x4-8c55",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Predictable results in nanoid generation when given non-integer values",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "picomatch",
+      "current_version": "2.3.1",
+      "vuln_id": "GHSA-c2c7-rcm5-vvqj",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "picomatch",
+      "current_version": "4.0.2",
+      "vuln_id": "GHSA-c2c7-rcm5-vvqj",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "flatted",
+      "current_version": "3.3.1",
+      "vuln_id": "GHSA-rf6f-7fwh-wjgh",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Prototype Pollution via parse() in NodeJS flatted",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "@babel/runtime",
+      "current_version": "7.26.0",
+      "vuln_id": "GHSA-968p-4wvh-cqc8",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Babel has inefficient RegExp complexity in generated code with .replace when transpiling named capturing groups",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "tmp",
+      "current_version": "0.0.33",
+      "vuln_id": "GHSA-52f5-9888-hmc6",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "tmp allows arbitrary temporary file / directory write via symbolic link `dir` parameter",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "js-yaml",
+      "current_version": "3.14.1",
+      "vuln_id": "GHSA-mh29-5h37-fv8m",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "js-yaml has prototype pollution in merge (<<)",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "flatted",
+      "current_version": "3.3.1",
+      "vuln_id": "GHSA-25h7-pfq9-p65f",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "flatted vulnerable to unbounded recursion DoS in parse() revive phase",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-9cwx-2883-4wfx",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vite's `server.fs.deny` is bypassed when using `?import&raw`",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "vite",
+      "current_version": "5.4.0",
+      "vuln_id": "GHSA-jqfw-vq24-v9c3",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "Vite's `server.fs` settings were not applied to HTML files",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    },
+    {
+      "package_name": "esbuild",
+      "current_version": "0.21.5",
+      "vuln_id": "GHSA-67mh-4wv8-2f99",
+      "vuln_severity": "low",
+      "fix_version": "N/A",
+      "message": "esbuild enables any website to send any requests to the development server and read the response",
+      "cwe": "N/A",
+      "cvss_score": 0,
+      "type": "vulnerability"
+    }
+  ],
+  "grype_metadata": {
+    "grype_version": "unknown",
+    "db_location": "",
+    "scanned_path": "/workspaces/ciberseguridad_2026/data/repos/esrap"
+  }
+}
