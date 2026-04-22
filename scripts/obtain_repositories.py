@@ -2,9 +2,9 @@ import requests
 import json
 from datetime import datetime, timedelta, timezone
 
-ORG = "openclaw"
+ORG = "sveltejs"
 BASE_PATH = "data/repos"
-TODAY = datetime(2026, 4, 16, tzinfo=timezone.utc)
+TODAY = datetime.now(timezone.utc)
 ONE_MONTH_AGO = TODAY - timedelta(days=30)
 
 
@@ -42,8 +42,8 @@ def get_active_repos():
 active_list = get_active_repos()
 data = {"repositories": active_list}
 
-with open("repos.json", "w") as f:
+with open("data/repos.json", "w") as f:
     json.dump(data, f, indent=4)
 
 print(f"Se encontraron {len(active_list)} repositorios activos.")
-print("Archivo 'repos.json' generado exitosamente.")
+print("Archivo 'data/repos.json' generado exitosamente.")
