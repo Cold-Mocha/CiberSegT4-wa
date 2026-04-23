@@ -1,5 +1,10 @@
 # Ciberseguridad 2026
 
+## Integrantes
+- Lucas Colomera
+- Daniela Diaz
+- Gustavo Pérez
+
 Proyecto para analizar repositorios open source mediante:
 
 - SBOMs con `Syft`
