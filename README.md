@@ -1,6 +1,7 @@
 # Ciberseguridad 2026
 
 ## Integrantes
+- Camilo Cifuentes
 - Lucas Colomera
 - Daniela Diaz
 - Gustavo Pérez
