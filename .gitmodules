@@ -1,36 +1,15 @@
-[submodule "data/repos/svelte"]
-	path = data/repos/svelte
-[submodule "data/repos/svelte-loader"]
-	path = data/repos/svelte-loader
-[submodule "data/repos/realworld"]
-	path = data/repos/realworld
-[submodule "data/repos/devalue"]
-	path = data/repos/devalue
-[submodule "data/repos/svelte-hmr"]
-	path = data/repos/svelte-hmr
-[submodule "data/repos/language-tools"]
-	path = data/repos/language-tools
-[submodule "data/repos/eslint-config"]
-	path = data/repos/eslint-config
-[submodule "data/repos/kit"]
-	path = data/repos/kit
-[submodule "data/repos/sites"]
-	path = data/repos/sites
-[submodule "data/repos/vite-plugin-svelte"]
-	path = data/repos/vite-plugin-svelte
-[submodule "data/repos/svelte-eslint-parser"]
-	path = data/repos/svelte-eslint-parser
-[submodule "data/repos/eslint-plugin-svelte"]
-	path = data/repos/eslint-plugin-svelte
-[submodule "data/repos/svelte-ecosystem-ci"]
-	path = data/repos/svelte-ecosystem-ci
-[submodule "data/repos/dts-buddy"]
-	path = data/repos/dts-buddy
-[submodule "data/repos/esrap"]
-	path = data/repos/esrap
-[submodule "data/repos/svelte.dev"]
-	path = data/repos/svelte.dev
-[submodule "data/repos/cli"]
-	path = data/repos/cli
-[submodule "data/repos/ai-tools"]
-	path = data/repos/ai-tools
+[submodule "data/repos/skills"]
+	path = data/repos/skills
+	url = https://github.com/anthropics/skills.git
+[submodule "data/repos/claude-cookbooks"]
+	path = data/repos/claude-cookbooks
+	url = https://github.com/anthropics/claude-cookbooks.git
+[submodule "data/repos/prompt-eng-interactive-tutorial"]
+	path = data/repos/prompt-eng-interactive-tutorial
+	url = https://github.com/anthropics/prompt-eng-interactive-tutorial.git
+[submodule "data/repos/courses"]
+	path = data/repos/courses
+	url = https://github.com/anthropics/courses.git
+[submodule "data/repos/claude-plugins-official"]
+	path = data/repos/claude-plugins-official
+	url = https://github.com/anthropics/claude-plugins-official.git

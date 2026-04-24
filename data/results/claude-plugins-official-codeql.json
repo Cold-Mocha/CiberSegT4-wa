@@ -1,0 +1,285 @@
+{
+  "total_issues": 19,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 19,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable holdout is not used.",
+      "file": "plugins/skill-creator/skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 19,
+        "startColumn": 5,
+        "endColumn": 12
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable best_train_score is not used.",
+      "file": "plugins/skill-creator/skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 157,
+        "startColumn": 5,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable train_passed is not used.",
+      "file": "plugins/skill-creator/skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 214,
+        "startColumn": 9,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable train_total is not used.",
+      "file": "plugins/skill-creator/skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 215,
+        "startColumn": 9,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable test_passed is not used.",
+      "file": "plugins/skill-creator/skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 216,
+        "startColumn": 9,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable test_total is not used.",
+      "file": "plugins/skill-creator/skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 217,
+        "startColumn": 9,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unnecessary-pass",
+      "rule_index": 70,
+      "level": "warning",
+      "message": "Unnecessary 'pass' statement.",
+      "file": "plugins/security-guidance/hooks/security_reminder_hook.py",
+      "region": {
+        "startLine": 180,
+        "startColumn": 9,
+        "endColumn": 13
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Import of 're' is not used.",
+      "file": "plugins/hookify/core/config_loader.py",
+      "region": {
+        "startLine": 10,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Import of 'os' is not used.",
+      "file": "plugins/skill-creator/skills/skill-creator/scripts/quick_validate.py",
+      "region": {
+        "startLine": 7,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unreachable-except",
+      "rule_index": 119,
+      "level": "warning",
+      "message": "This except block handling [UnicodeDecodeError](1) is unreachable; as [this except block](2) for the more general [ValueError](3) always subsumes it.",
+      "file": "plugins/hookify/core/config_loader.py",
+      "region": {
+        "startLine": 269,
+        "startColumn": 5,
+        "endColumn": 36
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "plugins/skill-creator/skills/skill-creator/scripts/aggregate_benchmark.py",
+      "region": {
+        "startLine": 146,
+        "startColumn": 21,
+        "endColumn": 49
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "plugins/skill-creator/skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 97,
+        "startColumn": 13,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "plugins/skill-creator/skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 111,
+        "startColumn": 17,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "plugins/skill-creator/skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 135,
+        "startColumn": 13,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "plugins/skill-creator/skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 231,
+        "startColumn": 9,
+        "endColumn": 58
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "plugins/skill-creator/skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 299,
+        "startColumn": 17,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "plugins/skill-creator/skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 303,
+        "startColumn": 5,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "plugins/skill-creator/skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 340,
+        "startColumn": 17,
+        "endColumn": 56
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "plugins/skill-creator/skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 428,
+        "startColumn": 9,
+        "endColumn": 48
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}

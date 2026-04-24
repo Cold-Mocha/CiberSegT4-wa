@@ -1,0 +1,676 @@
+{
+  "total_issues": 47,
+  "issues_by_severity": {
+    "error": 0,
+    "warning": 47,
+    "note": 0
+  },
+  "issues": [
+    {
+      "rule_id": "py/uninitialized-local-variable",
+      "rule_index": 52,
+      "level": "warning",
+      "message": "Local variable 'optimal' may be used before it is initialized.",
+      "file": "skills/slack-gif-creator/core/validators.py",
+      "region": {
+        "startLine": 87,
+        "startColumn": 20,
+        "endColumn": 27
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable holdout is not used.",
+      "file": "skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 19,
+        "startColumn": 5,
+        "endColumn": 12
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable best_train_score is not used.",
+      "file": "skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 157,
+        "startColumn": 5,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable train_passed is not used.",
+      "file": "skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 214,
+        "startColumn": 9,
+        "endColumn": 21
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable train_total is not used.",
+      "file": "skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 215,
+        "startColumn": 9,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable test_passed is not used.",
+      "file": "skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 216,
+        "startColumn": 9,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-local-variable",
+      "rule_index": 53,
+      "level": "warning",
+      "message": "Variable test_total is not used.",
+      "file": "skills/skill-creator/scripts/generate_report.py",
+      "region": {
+        "startLine": 217,
+        "startColumn": 9,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/multiple-definition",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "This assignment to 'comment_ids' is unnecessary as it is [redefined](1) before this value is used.",
+      "file": "skills/docx/scripts/office/validators/docx.py",
+      "region": {
+        "startLine": 353,
+        "startColumn": 13,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/multiple-definition",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "This assignment to 'comment_ids' is unnecessary as it is [redefined](1) before this value is used.",
+      "file": "skills/xlsx/scripts/office/validators/docx.py",
+      "region": {
+        "startLine": 353,
+        "startColumn": 13,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/multiple-definition",
+      "rule_index": 56,
+      "level": "warning",
+      "message": "This assignment to 'comment_ids' is unnecessary as it is [redefined](1) before this value is used.",
+      "file": "skills/pptx/scripts/office/validators/docx.py",
+      "region": {
+        "startLine": 353,
+        "startColumn": 13,
+        "endColumn": 24
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Import of 'np' is not used.",
+      "file": "skills/slack-gif-creator/core/frame_composer.py",
+      "region": {
+        "startLine": 11,
+        "endColumn": 19
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Import of 'Optional' is not used.",
+      "file": "skills/slack-gif-creator/core/gif_builder.py",
+      "region": {
+        "startLine": 10,
+        "endColumn": 28
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/unused-import",
+      "rule_index": 89,
+      "level": "warning",
+      "message": "Import of 'os' is not used.",
+      "file": "skills/skill-creator/scripts/quick_validate.py",
+      "region": {
+        "startLine": 7,
+        "endColumn": 10
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/catch-base-exception",
+      "rule_index": 118,
+      "level": "warning",
+      "message": "Except block directly handles BaseException.",
+      "file": "skills/slack-gif-creator/core/validators.py",
+      "region": {
+        "startLine": 56,
+        "startColumn": 13,
+        "endColumn": 20
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/skill-creator/scripts/aggregate_benchmark.py",
+      "region": {
+        "startLine": 146,
+        "startColumn": 21,
+        "endColumn": 49
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/xlsx/scripts/office/validators/base.py",
+      "region": {
+        "startLine": 138,
+        "startColumn": 13,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/docx/scripts/office/validators/base.py",
+      "region": {
+        "startLine": 138,
+        "startColumn": 13,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/pptx/scripts/office/validators/base.py",
+      "region": {
+        "startLine": 138,
+        "startColumn": 13,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/pptx/scripts/clean.py",
+      "region": {
+        "startLine": 122,
+        "startColumn": 13,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/pptx/scripts/clean.py",
+      "region": {
+        "startLine": 165,
+        "startColumn": 13,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/docx/scripts/comment.py",
+      "region": {
+        "startLine": 116,
+        "startColumn": 13,
+        "endColumn": 31
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/docx/scripts/office/validators/docx.py",
+      "region": {
+        "startLine": 287,
+        "startColumn": 13,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/docx/scripts/office/validators/docx.py",
+      "region": {
+        "startLine": 439,
+        "startColumn": 13,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/xlsx/scripts/office/validators/docx.py",
+      "region": {
+        "startLine": 287,
+        "startColumn": 13,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/xlsx/scripts/office/validators/docx.py",
+      "region": {
+        "startLine": 439,
+        "startColumn": 13,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/pptx/scripts/office/validators/docx.py",
+      "region": {
+        "startLine": 287,
+        "startColumn": 13,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/pptx/scripts/office/validators/docx.py",
+      "region": {
+        "startLine": 439,
+        "startColumn": 13,
+        "endColumn": 30
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 97,
+        "startColumn": 13,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 111,
+        "startColumn": 17,
+        "endColumn": 32
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 135,
+        "startColumn": 13,
+        "endColumn": 52
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 231,
+        "startColumn": 9,
+        "endColumn": 58
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 299,
+        "startColumn": 17,
+        "endColumn": 57
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 303,
+        "startColumn": 5,
+        "endColumn": 38
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 340,
+        "startColumn": 17,
+        "endColumn": 56
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/skill-creator/eval-viewer/generate_review.py",
+      "region": {
+        "startLine": 428,
+        "startColumn": 9,
+        "endColumn": 48
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/xlsx/scripts/office/validators/redlining.py",
+      "region": {
+        "startLine": 56,
+        "startColumn": 9,
+        "endColumn": 26
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/xlsx/scripts/office/validators/redlining.py",
+      "region": {
+        "startLine": 193,
+        "startColumn": 9,
+        "endColumn": 78
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/docx/scripts/office/validators/redlining.py",
+      "region": {
+        "startLine": 56,
+        "startColumn": 9,
+        "endColumn": 26
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/docx/scripts/office/validators/redlining.py",
+      "region": {
+        "startLine": 193,
+        "startColumn": 9,
+        "endColumn": 78
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/pptx/scripts/office/validators/redlining.py",
+      "region": {
+        "startLine": 56,
+        "startColumn": 9,
+        "endColumn": 26
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/pptx/scripts/office/validators/redlining.py",
+      "region": {
+        "startLine": 193,
+        "startColumn": 9,
+        "endColumn": 78
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/docx/scripts/office/unpack.py",
+      "region": {
+        "startLine": 87,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/docx/scripts/office/unpack.py",
+      "region": {
+        "startLine": 97,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/xlsx/scripts/office/unpack.py",
+      "region": {
+        "startLine": 87,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/xlsx/scripts/office/unpack.py",
+      "region": {
+        "startLine": 97,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/pptx/scripts/office/unpack.py",
+      "region": {
+        "startLine": 87,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    },
+    {
+      "rule_id": "py/empty-except",
+      "rule_index": 121,
+      "level": "warning",
+      "message": "'except' clause does nothing but pass and there is no explanatory comment.",
+      "file": "skills/pptx/scripts/office/unpack.py",
+      "region": {
+        "startLine": 97,
+        "startColumn": 5,
+        "endColumn": 22
+      },
+      "kind": "notApplicable",
+      "properties": {}
+    }
+  ],
+  "sarif_metadata": {
+    "version": "2.1.0",
+    "schema_uri": "https://json.schemastore.org/sarif-2.1.0.json",
+    "tool": {
+      "name": "CodeQL",
+      "version": "unknown",
+      "information_uri": ""
+    },
+    "tool_name": "CodeQL",
+    "tool_version": "unknown"
+  }
+}
